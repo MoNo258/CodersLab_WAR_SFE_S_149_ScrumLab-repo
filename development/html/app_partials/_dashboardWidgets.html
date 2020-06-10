@@ -1,0 +1,134 @@
+<!-- <section class="dashboardWidgets"> --->
+
+<div class="dashboardWidgets__content">
+
+    <div class="grid-container">
+
+        <div class="addRecipe">
+            <div class="addRecipe__link" id="addRecipeBtn">
+                <i class="far fa-plus-square"></i>
+                <p>dodaj przepis</p>
+            </div>
+        </div>
+
+        <div class="addSchedule">
+            <div class="addSchedule__link" id="addScheduleBtn">
+                <i class="far fa-plus-square"></i>
+                <p>dodaj plan</p>
+            </div>
+
+        </div>
+
+        <div class="notifications">
+            <div class="info">
+                <i class="fas fa-info-circle"></i>
+                <p class="info__text">Masz już {recipes.length} przepisów, nieźle!</p>
+                <i id="info__close" class="fas fa-window-close"></i>
+            </div>
+
+            <div class="warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <p class="warning__text">Pamiętaj, aby dodać plan!</p>
+                <i id="warning__close" class="fas fa-window-close"></i>
+            </div>
+
+            <div class="success">
+                <i class="fas fa-check-circle"></i>
+                <p class="success__text">Świetnie że jesteś! Udanego planowania i smaczego! :)</p>
+                <i id="success__close" class="fas fa-window-close"></i>
+            </div>
+
+        </div>
+
+        <div class="week-view">
+
+            <table>
+                <caption class="table__title">Twój plan na {nr_tygodnia} tydzień:</caption>
+
+                <tbody>
+                <tr class="day">
+                    <th id="mon-day " class="table__row-title">Poniedziałek</th>
+                    <th id="tue-day" class="table__row-title">Wtorek</th>
+                    <th id="wed-day" class="table__row-title">Środa</th>
+                    <th id="thu-day" class="table__row-title">Czwartek</th>
+                    <th id="fri-day" class="table__row-title">Piątek</th>
+                    <th id="sat-day" class="table__row-title">Sobota</th>
+                    <th id="sun-day" class="table__row-title">Niedziela</th>
+                </tr>
+                <!-- MEALS -->
+                <tr  class="table__row-value">
+                    <td id="mon-breakfast">sniadanie</td>
+                    <td id="tue-breakfast">sniadanie</td>
+                    <td id="wed-breakfast">sniadanie</td>
+                    <td id="thu-breakfast">sniadanie</td>
+                    <td id="fri-breakfast">sniadanie</td>
+                    <td id="sat-breakfast">sniadanie</td>
+                    <td id="sun-breakfast">sniadanie</td>
+                </tr>
+                <tr class="table__row-value">
+                    <td id="mon-secBreakfast">drugie sniadanie</td>
+                    <td id="tue-secBreakfast">drugie sniadanie</td>
+                    <td id="wed-secBreakfast">drugie sniadanie</td>
+                    <td id="thu-secBreakfast">drugie sniadanie</td>
+                    <td id="fri-secBreakfast">drugie sniadanie</td>
+                    <td id="sat-secBreakfast">drugie sniadanie</td>
+                    <td id="sun-secBreakfast">drugie sniadanie</td>
+                </tr>
+                <tr class="table__row-value">
+                    <td id="mon-soup">zupa</td>
+                    <td id="tue-soup">zupa</td>
+                    <td id="wed-soup">zupa</td>
+                    <td id="thu-soup">zupa</td>
+                    <td id="fri-soup">zupa</td>
+                    <td id="sat-soup">zupa</td>
+                    <td id="sun-soup">zupa</td>
+                </tr>
+                <tr class="table__row-value">
+                    <td id="mon-dinner">drugie danie</td>
+                    <td id="tue-dinner">drugie danie</td>
+                    <td id="wed-dinner">drugie danie</td>
+                    <td id="thu-dinner">drugie danie</td>
+                    <td id="fri-dinner">drugie danie</td>
+                    <td id="sat-dinner">drugie danie</td>
+                    <td id="sun-dinner">drugie danie</td>
+                </tr>
+                <tr class="table__row-value">
+                    <td id="mon-supper">kolacja</td>
+                    <td id="tue-supper">kolacja</td>
+                    <td id="wed-supper">kolacja</td>
+                    <td id="thu-supper">kolacja</td>
+                    <td id="fri-supper">kolacja</td>
+                    <td id="sat-supper">kolacja</td>
+                    <td id="sun-supper">kolacja</td>
+                </tr>
+                <tr>
+                    <td class="table__row-nav">
+                        <div class="table__nav-previous">
+                            <i class="fas fa-angle-double-left"></i>
+                            <span>poprzedni</span>
+                        </div>
+                    </td>
+
+                    <td class="table__row-nav"></td>
+                    <td class="table__row-nav"></td>
+                    <td class="table__row-nav"></td>
+                    <td class="table__row-nav"></td>
+                    <td class="table__row-nav"></td>
+
+                    <td class="table__row-nav">
+                        <div class="table__nav-next">
+                            <span>następny</span>
+                            <i class="fas fa-angle-double-right"></i>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- </section> --->

@@ -1,0 +1,66 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+//style for the basic grid
+@include gridLayout;
+
+.aboutMe{
+  background-color: $color-background;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .row > .col-3.aboutMe__col-3{
+    background-color: $color-grey;
+    img{
+      height: 100%;
+      width: 90%;
+    }
+  }
+
+  .aboutMe_photo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutMe__container{
+    background-color: $color-background;
+    color: $color-dark-grey;
+    height: 60%;
+  }
+
+  .row .aboutMe__col-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 70px;
+  }
+
+  .row .aboutMe__col-9{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 70px;
+  }
+
+  .aboutMe__title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .aboutMe__text{
+    font-size: 1.4em;
+  }
+}
+
+
+
+

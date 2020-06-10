@@ -1,0 +1,36 @@
+@import "../settings/mixins";
+@import "../settings/variables";
+
+// ----- PARTIALS APP -----
+@import "dashboardFirstEntry";    //2.2-welcome_page
+@import "dashboardWidgets";       //3-widgets
+@import "dashboardReceipe";       //dashboard with recipe part
+@import "dashboardSchedule";      //dashboard with schedule part
+
+.body__app{
+  background-image: url("../images/app_backgroung.png");
+  height: 100vh;
+  //background-color: dodgerblue;
+}
+
+.mainApp {
+  width: 70%;
+  //height: 100%;
+
+  position: relative;
+  left: 400px;
+  bottom: 800px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: $color-background;
+  border: 1px dashed $color-light-grey;
+  padding: 2em;
+}
+
+//class to be used to hide items with display: none option
+.d-none{
+  display: none;
+}

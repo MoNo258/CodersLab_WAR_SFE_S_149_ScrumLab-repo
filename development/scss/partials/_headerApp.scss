@@ -1,0 +1,43 @@
+@import "../settings/variables";
+.headerApp{
+  width: 100%;
+  background-color: $color-dark-grey;
+
+  .header__container{
+    background-color: $color-dark-grey;
+    height: 100px;
+    width: 100%;
+  }
+
+  .logo{
+    margin: 0 50px;
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+
+  .header__user{
+    //font-size: 3em;
+  }
+
+  .header__user--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+  }
+
+  .userName__info{
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 30px;
+  }
+
+  .fa-user-circle{
+    color: $color-orange;
+    font-size: 3em;
+  }
+}
+

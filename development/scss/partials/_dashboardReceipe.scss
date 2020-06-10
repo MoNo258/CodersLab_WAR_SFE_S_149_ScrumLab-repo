@@ -1,0 +1,318 @@
+@use "sass:color";
+@import "../settings/variables";
+
+.dashboardRecipe {
+  background-color: #5B605F;
+  color: $color-grey;
+}
+
+.dashboardRecipe__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr) 300px;
+  gap: 15px 0px;
+  grid-template-areas: "recipeTitleLabel recipeTitleLabel recipeTitleLabel recipeTitleLabel recipeTitleLabel recipeTitleLabel recipeSaveAndAdd recipeSaveAndAdd" "recipeNameLabel recipeNameLabel recipeName recipeName recipeName recipeName recipeName recipeName" "recipeDescLabel recipeDescLabel recipeDesc recipeDesc recipeDesc recipeDesc recipeDesc recipeDesc" "recipeDescLabel recipeDescLabel recipeDesc recipeDesc recipeDesc recipeDesc recipeDesc recipeDesc" "instructionTitle instructionTitle instructionTitle instructionTitle ingredientsTitle ingredientsTitle ingredientsTitle ingredientsTitle" "instructionText instructionText instructionText instructionText ingredientsText ingredientsText ingredientsText ingredientsText" "instructionText instructionText instructionText instructionText ingredientsText ingredientsText ingredientsText ingredientsText" "instructionList instructionList instructionList instructionList ingredientsList ingredientsList ingredientsList ingredientsList";
+
+}
+
+.dashboardRecipe__element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.recipeTitleLabel {
+  grid-area: recipeTitleLabel;
+  color: $color-orange;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  align-self: end;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    border-bottom: 1.5px solid lighten($color-light-grey, 20%);
+    width: 100%;
+  }
+}
+
+.recipeSaveAndAdd {
+  grid-area: recipeSaveAndAdd;
+  position: relative;
+
+
+  .recipeSaveAndAdd-button {
+    padding: 8px 20px;
+    color: white;
+    background-color: $color-orange;
+    border: none;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+
+    &:hover {
+      box-shadow: 0 0 5px 1px $color-orange;
+      cursor: pointer;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    border-bottom: 1.5px solid lighten($color-light-grey, 20%);
+    width: 100%;
+  }
+}
+
+.recipeNameLabel {
+  grid-area: recipeNameLabel;
+  font-size: 1.5em;
+}
+
+.recipeName {
+  grid-area: recipeName;
+  height: 100%;
+  width: 100%;
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .recipeNameInput {
+    height: 100%;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-family: "Open Sans", sans-serif;
+    color: $color-dark-grey;
+    border: 0.5px solid lighten($color-light-grey, 20%);
+
+    &::placeholder {
+      font-style: italic;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 1px 0.5px $color-orange;
+    }
+  }
+}
+
+.recipeDescLabel {
+  grid-area: recipeDescLabel;
+  font-size: 1.5em;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.recipeDesc {
+  grid-area: recipeDesc;
+  width: 100%;
+  height: 100%;
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .recipeDescInput {
+    height: 100%;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-family: "Open Sans", sans-serif;
+    color: $color-dark-grey;
+    resize: none;
+    border: 0.5px solid lighten($color-light-grey, 20%);
+
+    &::placeholder {
+      font-style: italic;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 1px 0.5px $color-orange;
+    }
+  }
+}
+
+.instructionTitle {
+  grid-area: instructionTitle;
+  font-size: 1.5em;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    border-bottom: 1.5px solid lighten($color-light-grey, 20%);
+    width: 95%;
+  }
+}
+
+.ingredientsTitle {
+  grid-area: ingredientsTitle;
+  font-size: 1.5em;
+  position: relative;
+  margin-left: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    border-bottom: 1.5px solid lighten($color-light-grey, 20%);
+    width: 100%;
+  }
+}
+
+.instructionText {
+  grid-area: instructionText;
+  height: 100%;
+  width: 100%;
+  align-self: start;
+
+  form {
+    width: 95%;
+    height: 100%;
+  }
+
+  .instructionTextInput {
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: $color-dark-grey;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+    border: 0.5px solid lighten($color-light-grey, 20%);
+
+    &::placeholder {
+      font-style: italic;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 1px 0.5px $color-orange;
+    }
+  }
+
+  .instructionAdd {
+    width: 10%;
+    align-self: start;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.ingredientsText {
+  grid-area: ingredientsText;
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+
+  form {
+    width: 90%;
+    height: 50%;
+    align-self: start;
+  }
+
+  .ingredientsTextInput {
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-family: "Open Sans", sans-serif;
+    color: $color-dark-grey;
+    border: 0.5px solid lighten($color-light-grey, 20%);
+
+    &::placeholder {
+      font-style: italic;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 1px 0.5px $color-orange;
+    }
+  }
+
+  .ingredientsAdd {
+    width: 10%;
+    align-self: start;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.instructionList {
+  grid-area: instructionList;
+  overflow: auto;
+  width: 95%;
+  margin-top: 20px;
+
+  .instructionList__content {
+    align-self: start;
+    line-height: 1.5em;
+    list-style-type: decimal;
+    list-style-position: inside;
+
+    li {
+      //padding-left: 10px;
+      list-style-position: outside;
+      margin-left: 1.1em;
+      padding-left: 5px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.ingredientsList {
+  grid-area: ingredientsList;
+  overflow: auto;
+  //width: 90%;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  .ingredientsList__content {
+    align-self: start;
+    line-height: 1.5em;
+    list-style-type: disc;
+    list-style-position: inside;
+
+    li {
+      //padding-left: 10px;
+      list-style-position: outside;
+      margin-left: 1.2em;
+      padding-left: 5px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.fas.fa-edit {
+  font-size: 1em;
+  color: $color-warning;
+}
+
+.far.fa-trash-alt {
+  font-size: 1em;
+  color: $color-trash-icon;
+}
+
+.fas.fa-plus-square {
+  font-size: 2em;
+  color: $color-success;
+}

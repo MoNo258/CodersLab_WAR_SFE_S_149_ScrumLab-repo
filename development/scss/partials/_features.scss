@@ -1,0 +1,40 @@
+//style for the basic grid
+@include gridLayout;
+
+.features{
+  background-color: $color-background;
+  width: 100%;
+  height: 600px;
+}
+
+.features__container{
+  background-color: $color-background;
+  color: $color-grey;
+  height: 100%;
+}
+
+.row > .col-4.features__col-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 70px;
+}
+
+.fa,
+.far{
+  font-size: 5em;
+  color: $color-light-grey;
+}
+
+.features__title{
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.features__text{
+  font-size: 1.5em;
+  text-align: center;
+}
