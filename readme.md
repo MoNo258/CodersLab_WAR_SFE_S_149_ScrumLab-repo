@@ -12,6 +12,7 @@ To start development follow this instruction:
 Avaliable commends for you to type in console:
 
 `gulp` - this will run gulp in browserSync mode, that means gulp will start serwer on your `localhost` and refresh it for you everytime you change `scss`, `js` or `html` file. Using this command will do all the work for you :) Gulp runs in watch mode, that will compiles your `main.scss` into `css/main.css` & auto-inject into browsers.
+ To see proper page result you must copy `development/images` into `dist/images`.
 
 
 ## Folder Structure

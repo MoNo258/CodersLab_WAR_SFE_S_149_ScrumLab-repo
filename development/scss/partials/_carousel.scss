@@ -32,7 +32,6 @@
    position: relative;
    height: 100%;
    transition: transform 600ms ease-in;
-
  }
  .carousel__slide{
    position: absolute;
@@ -91,9 +90,14 @@
    right: 40px;
    z-index: 1;
  }
- .carousel__button img {
+ .carousel__svg {
    width: 40px;
-
+   fill: none;
+   color: $color-dark-grey;
+   &:hover{
+     color: $color-light-grey;
+     fill: none;
+   }
  }
  .carousel__nav{
    display: none;
