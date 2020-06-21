@@ -3,6 +3,18 @@ This is a repository dedicated to ScrumLab front-end project in Coders Lab IT Sc
 
 After sprint was finished (starting from the moment when this repo was created) project was developed by MoNo258.
 
+####This project uses:
+* `Sass Dart`
+* `JavaScrip ES6`
+* `Gulp` (for Sass)
+* `Webpack` (for js)
+
+####This project was created:
+* in `Scrum` methodology
+* using `GitHub` repo and `Git` for local branches
+* using `Trello` (`Kanban board`) for tracking progress
+* using `WebStorm`
+
 ## Project: Landing Page and App
 
 This project assumed creation of Landing Page and App related to organizing meals recipes and schedules of such meals for the user who registered herself/himself in the app (onetime registration with name saved in `localStorage`).
