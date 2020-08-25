@@ -3,6 +3,10 @@ This is a repository dedicated to ScrumLab front-end project in Coders Lab IT Sc
 
 After sprint was finished (starting from the moment when this repo was created) project was developed by MoNo258.
 
+### Link to demo:
+This application is DESKTOP only
+### [Zaplanuj jedzonko](https://zen-tereshkova-6e5782.netlify.app/)
+
 #### This project uses:
 * `Sass Dart`
 * `JavaScrip ES6`
